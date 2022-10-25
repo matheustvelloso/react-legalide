@@ -11,14 +11,17 @@ const WhoWeAre = () => (
                 text="Problems trying to resolve the conflict between the two major realms
                 of Classical physics: Newtonian mechanics"
             />
-            <div className="row d-lg-flex justify-content-between">
-                <div className='col-7 text-center'>
-                    <iframe className='d-none d-xl-block' width="597" height="442" src="https://www.youtube.com/embed/ImEnWAVRLU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe className='d-xl-none' width="300" height="442" src="https://www.youtube.com/embed/ImEnWAVRLU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div className="row row-cols-1 row-cols-lg-3 d-lg-flex justify-content-between">
+                <div className='col text-center'>
+                    <iframe className='d-none d-xl-block' width="700" height="442" src="https://www.youtube.com/embed/ImEnWAVRLU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe className='d-none d-lg-block d-xl-none' width="597" height="442" src="https://www.youtube.com/embed/ImEnWAVRLU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe className='d-none d-md-block d-lg-none' width="700" height="442" src="https://www.youtube.com/embed/ImEnWAVRLU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe className='d-none d-sm-block d-md-none' width="530" height="442" src="https://www.youtube.com/embed/ImEnWAVRLU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe className='d-block d-sm-none' width="300" height="442" src="https://www.youtube.com/embed/ImEnWAVRLU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div className="col-5">
+                <div className="col">
                     <SectionTitle 
-                        styles="d-flex d-lg-block flex-column text-start align-items-center mt-5"
+                        styles="d-flex flex-column text-start mt-5 mt-lg-0"
                         title="Most trusted in our field"
                         text="Most calendars are designed for teams. Slate is designed for freelancers who want a 
                         simple way to plan their schedule."
@@ -41,7 +44,7 @@ const WhoWeAre = () => (
             </div>
         </div>
         <div className='container mt-5'>
-            <div className='d-lg-flex justify-content-center text-center pt-5'>
+            <div className='d-flex flex-wrap justify-content-center text-center pt-5'>
                 <div>
                     <FaHooli className='icon-hooli'/>
                 </div>
@@ -62,24 +65,15 @@ const WhoWeAre = () => (
                 </div>
             </div>
             <div className='container mt-5'>
-                <div className='d-none d-lg-flex justify-content-between bg-blue'>
-                    <div className='p-4 mt-3'>
+                <div className='d-flex flex-wrap justify-content-between bg-blue'>
+                    <div className='d-flex align-items-center justify-content-center p-4 mt-3'>
                         <h3>Subscribe For Latest <br></br> Newsletter</h3>
                     </div>
-                    <div className='d-flex p-4 mt-3'>
-                        <input className="input-email p-4" type="email" placeholder='Your email' />
+                    <div className='d-flex align-items-center p-4 mt-3'>
+                        <input className="input-email p-4 w-md-100" type="email" placeholder='Your email' />
                         <button className='btn-subscribe'>Subscribe</button>
                     </div>
-                </div>
-                <div className='d-lg-none bg-blue text-center'>
-                    <div className=' p-4 mt-3'>
-                        <h3>Subscribe For Latest <br></br> Newsletter</h3>
-                    </div>
-                    <div className='d-flex justify-content-center p-4 mt-3'>
-                        <input className="input-email-mobile" type="email"   />
-                        <button className='btn-subscribe'>Subscribe</button>
-                    </div>
-                </div>
+                </div>            
             </div>
         </div>
     </>

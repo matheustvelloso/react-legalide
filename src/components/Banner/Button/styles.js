@@ -6,7 +6,7 @@ export const Button = styled.button`
     border-radius: 37px;
     border: ${({theme})=> theme === "full" ? "none" : "1px solid #fff"};
 
-    &:hover{
+    &:hover,:focus{
         background-color: ${({theme})=> theme === "full" ? "#D0A144" : "transparent"};
         color: #ffffff;
     }

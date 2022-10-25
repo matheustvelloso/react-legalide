@@ -14,7 +14,7 @@ const PracticeAdvice = () => (
                 text="Problems trying to resolve the conflict between
                 the two major realms of Classical physics: Newtonian mechanics"
             />
-            <div className='row d-flex justify-content-center mb-card gap mt-4'>
+            <div className='row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 d-flex justify-content-center mb-card gap mt-4'>
                 <CardPraticeAdvice
                     title="Frauds or Mislead"
                     text="Newton thought that light was made up of particles, but then it was discovered"

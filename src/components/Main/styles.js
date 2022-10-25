@@ -15,11 +15,6 @@ export default createGlobalStyle`
     box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
     border-radius: 5px;
 }
-.card-2 {
-    width: 230px;
-    min-height: 341px;
-    background: #ffffff;
-}
 .card-3{
     max-width: 328px;
     background-color: #ffffff;

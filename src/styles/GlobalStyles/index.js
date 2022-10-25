@@ -21,4 +21,15 @@ export default createGlobalStyle`
     main{
     background: #252B42;
     }
+    .gap{
+        gap: 10px;
+    }
+    .gap2{
+        gap: 40px;
+    }
+    .w-md-100 {
+        @media(max-width: 768px){
+            width: 100%;
+        }
+    }
 `

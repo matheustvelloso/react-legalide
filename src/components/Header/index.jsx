@@ -1,49 +1,45 @@
-import { NavHeader, HeaderMobile } from "./styles";
-import {FaBars} from "react-icons/fa";
+import { NavHeader, HeaderMobile, Nav, MenuMobile, MenuOverlay } from "./styles";
+import { VscThreeBars, VscChromeClose } from 'react-icons/vsc'
+import Container from "../Container";
+import { useState } from "react";
 
-const Header = () => (
-    <> 
-        <header className='text-white d-lg-block d-none'>
-            <div className='container'>
-                <div className='d-flex mt-3 justify-content-between'>
-                    <h3 className='p-4'>Legalide</h3>
-                    <NavHeader className='d-flex'>
-                        <a href='#practice-areas'>Practice Areas</a>
-                        <a href='#practice-advice'>Practice Advice</a>
-                        <a href='#who-we-are'>Who we are</a>
-                        <a href='#contact'>Contact</a>
-                    </NavHeader>   
-                </div>   
-            </div>
-        </header>
-        <HeaderMobile className='text-white d-lg-none'>
-            <div className='container text-center d-flex justify-content-between'>
-                <div>
-                    <h3 className='p-4'>Legalide</h3>
+const Header = () => {
+    const [isMenuOpened, setIsMenuOpened] = useState(false);
+    return (
+        <> 
+            <MenuOverlay isMenuOpened={isMenuOpened} onClick={() => setIsMenuOpened(false)} className="d-flex d-md-none position-fixed h-100 w-100"/>
+            <MenuMobile isMenuOpened={isMenuOpened} className="d-flex flex-column d-md-none position-fixed bg-white">
+                <VscChromeClose onClick={() => setIsMenuOpened(false)} className="align-self-end mb-5" />
+                <Container>
+                    <Nav className="d-flex flex-column justify-content-between align-items-center col">
+                        <a className="pb-3" style={{whiteSpace: 'nowrap'}} href='#practice-areas'>Practice Areas</a>
+                        <a className="pb-3" style={{whiteSpace: 'nowrap'}} href='#practice-advice'>Practice Advice</a>
+                        <a className="pb-3" style={{whiteSpace: 'nowrap'}} href='#who-we-are'>Who we are</a>               
+                        <a className="pb-3" style={{whiteSpace: 'nowrap'}} href='#contact'>Contact</a>
+                    </Nav>
+                </Container>
+            </MenuMobile>
+            <header className='text-white d-lg-block d-none'>
+                <div className='container'>
+                    <div className='d-flex mt-3 justify-content-between'>
+                        <h3 className='p-4'>Legalide</h3>
+                        <NavHeader className='d-flex'>
+                            <a href='#practice-areas'>Practice Areas</a>
+                            <a href='#practice-advice'>Practice Advice</a>
+                            <a href='#who-we-are'>Who we are</a>
+                            <a href='#contact'>Contact</a>
+                        </NavHeader>   
+                    </div>   
                 </div>
-                <div>
-                    <button class="mt-4 btn-header" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
-                            <FaBars/>
-                    </button>
-                    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
-                      <div class="offcanvas-header">
-                        <h5 class="offcanvas-title text-black ms-4" id="staticBackdropLabel">Menu</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body link-black">
-                            <nav className='padd d-flex flex-column align-items-start'> 
-                                <a href='#practice-areas'>Home</a>
-                                <a href='#practice-advice'>Product</a>
-                                <a href='#who-we-are'>Pricing</a>
-                                <a href='#contact'>Contact</a>
-                            </nav>   
-                        </div> 
-                    </div>    
+            </header>
+            <HeaderMobile className='text-white d-lg-none'>
+                <div className='container text-center d-flex justify-content-between'>
+                    <h3 className='p-4'>Legalide</h3>
+                    <VscThreeBars className='m-4' onClick={() => setIsMenuOpened(true)}/>            
                 </div>
-            </div>
-        </HeaderMobile>
-    </>
-);
+            </HeaderMobile>  
+        </>
+)};
 
 export default Header;
     

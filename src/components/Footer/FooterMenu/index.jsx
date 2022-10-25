@@ -7,7 +7,7 @@ import IconFooterMenu from './IconFooterMenu';
 const FooterMenu = () => (
     <>
         <div className='container text-white mt-5 mb-5'>
-            <div className='d-lg-flex justify-content-between text-center'>
+            <div className='d-flex flex-wrap justify-content-center gap2 text-center'>
                <CardFooterMenu className="mt-4 mb-footer"
                     title="Company Info"
                     subtitle1="About Us"
