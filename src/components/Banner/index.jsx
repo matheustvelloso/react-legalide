@@ -26,11 +26,13 @@ const Banner = () => (
             <h4 className='text-white'>We know how large <br></br>objects will act,but things on a small scale just do <br></br> not act that way.</h4>
             <div className='d-flex flex-column align-self-center mt-4 mb-4 gap'>
                 <Button                                                                                         
-                    styles="btn btn-yellow me-2"
+                    styles="me-2"
+                    theme="full" 
                     text="Get Quote Now"
                 />
-                <Button                                                                                         
-                    styles="btn btn-transparent ms-3 mt-3"
+                <Button    
+                    styles=" ms-3 mt-3"    
+                    theme="full"     
                     text="Learn More"
                 />
             </div>

@@ -6,7 +6,7 @@ const FooterSocialMedia = () => (
             <div className="container">
                 <div className='d-md-flex justify-content-between text-center'>
                     <div className=" text-white">
-                        <h6>Made With Love By Figmaland All Right Reserved </h6>
+                        <h6>Site by <a style={{color:"#0d6efd"} } href="https://github.com/matheustvelloso" target="_blank" rel="noreferrer">Matheus Velloso</a></h6>
                     </div>
                     <div className="mt-4 mt-md-0 pe-social-media">
                         <a href="http://www.facebook.com" target="_blank" rel="noreferrer">

@@ -1,10 +1,11 @@
-const CardOurPracticeAreas = ({icon, title}) => (
-    <div className="col-md-4 card">
+
+const CardOurPracticeAreas = ({ icon, title }) => (
+    <div className="col card">
         <div className="mt-4">
             {icon}
         </div>
         <h5 className="h5-blue">{title}</h5>
-    </div>
+     </div>
 );
 
 export default CardOurPracticeAreas;

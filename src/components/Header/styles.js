@@ -59,6 +59,7 @@ export const Select = styled.select`
     }
 `
 export const MenuMobile = styled.div`
+    z-index: 2;
     height: 100vh;
     right: ${props => props.isMenuOpened ? 0 : -160}px;
     padding: 30px;
@@ -67,6 +68,7 @@ export const MenuMobile = styled.div`
     transition: all 0.2s ease-out;
 `
 export const MenuOverlay = styled.div`
+    z-index: 2;
     opacity: ${props => props.isMenuOpened ? 1 : 0};
     visibility: ${props => props.isMenuOpened ? "visible" : "hidden"};
     animation: ${props => props.isMenuOpened ? fadeIn : fadeOut} 0.2s ease-out;

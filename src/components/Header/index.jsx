@@ -7,15 +7,15 @@ const Header = () => {
     const [isMenuOpened, setIsMenuOpened] = useState(false);
     return (
         <> 
-            <MenuOverlay isMenuOpened={isMenuOpened} onClick={() => setIsMenuOpened(false)} className="d-flex d-md-none position-fixed h-100 w-100"/>
-            <MenuMobile isMenuOpened={isMenuOpened} className="d-flex flex-column d-md-none position-fixed bg-white">
+            <MenuOverlay isMenuOpened={isMenuOpened} onClick={() => setIsMenuOpened(false)} className="d-flex d-lg-none position-fixed h-100 w-100"/>
+            <MenuMobile isMenuOpened={isMenuOpened} className="d-flex flex-column d-lg-none position-fixed bg-white">
                 <VscChromeClose onClick={() => setIsMenuOpened(false)} className="align-self-end mb-5" />
                 <Container>
                     <Nav className="d-flex flex-column justify-content-between align-items-center col">
-                        <a className="pb-3" style={{whiteSpace: 'nowrap'}} href='#practice-areas'>Practice Areas</a>
-                        <a className="pb-3" style={{whiteSpace: 'nowrap'}} href='#practice-advice'>Practice Advice</a>
-                        <a className="pb-3" style={{whiteSpace: 'nowrap'}} href='#who-we-are'>Who we are</a>               
-                        <a className="pb-3" style={{whiteSpace: 'nowrap'}} href='#contact'>Contact</a>
+                        <a onClick={() => setIsMenuOpened(false) } className="pb-3" style={{whiteSpace: 'nowrap'}} href='#practice-areas'>Practice Areas</a>
+                        <a onClick={() => setIsMenuOpened(false) } className="pb-3" style={{whiteSpace: 'nowrap'}} href='#practice-advice'>Practice Advice</a>
+                        <a onClick={() => setIsMenuOpened(false) } className="pb-3" style={{whiteSpace: 'nowrap'}} href='#who-we-are'>Who we are</a>               
+                        <a onClick={() => setIsMenuOpened(false) } className="pb-3" style={{whiteSpace: 'nowrap'}} href='#contact'>Contact</a>
                     </Nav>
                 </Container>
             </MenuMobile>

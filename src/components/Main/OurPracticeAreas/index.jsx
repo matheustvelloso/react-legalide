@@ -13,12 +13,13 @@ const OurPracticeAreas = () => (
                 text="Problems trying to resolve the conflict between 
                 the two major realms of Classical physics: Newtonian mechanics"
             />
-            <div className='row d-flex justify-content-center mb-card gap m-e mt-4'>
+           
+            <div className='row row-cols-2 d-flex justify-content-center mb-card gap container m-e pe-0 mt-4'>
                 <CardOurPracticeAreas 
                     icon={<FaBalanceScale className="icon-balance"/>}
                     title="Family Law"
                 />
-                <CardOurPracticeAreas
+                    <CardOurPracticeAreas
                     icon={<ImHammer2 className="icon-balance"/>}
                     title="Business"
                 />
@@ -26,8 +27,8 @@ const OurPracticeAreas = () => (
                     icon={<TbChecklist className="icon-balance"/>}
                     title="Trusts &amp; States" 
                 />
+                </div>
             </div>
-        </div>
     </>
 );
 export default OurPracticeAreas;

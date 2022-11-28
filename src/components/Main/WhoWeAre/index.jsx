@@ -1,5 +1,7 @@
 import { BsPeopleFill } from 'react-icons/bs';
 import { FaHooli, FaLyft, FaStripe, FaAws, FaRedditAlien } from 'react-icons/fa';
+import { GiRobinHoodHat} from 'react-icons/gi';
+
 import SectionTitle from '../SectionTitle';
 
 const WhoWeAre = () => (
@@ -11,13 +13,11 @@ const WhoWeAre = () => (
                 text="Problems trying to resolve the conflict between the two major realms
                 of Classical physics: Newtonian mechanics"
             />
-            <div className="row row-cols-1 row-cols-lg-3 d-lg-flex justify-content-between">
+            <div className="row row-cols-1 row-cols-lg-2 d-lg-flex justify-content-between">
                 <div className='col text-center'>
-                    <iframe className='d-none d-xl-block' width="700" height="442" src="https://www.youtube.com/embed/ImEnWAVRLU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe className='d-none d-lg-block d-xl-none' width="597" height="442" src="https://www.youtube.com/embed/ImEnWAVRLU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe className='d-none d-md-block d-lg-none' width="700" height="442" src="https://www.youtube.com/embed/ImEnWAVRLU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe className='d-none d-sm-block d-md-none' width="530" height="442" src="https://www.youtube.com/embed/ImEnWAVRLU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe className='d-block d-sm-none' width="300" height="442" src="https://www.youtube.com/embed/ImEnWAVRLU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/ImEnWAVRLU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>
                 <div className="col">
                     <SectionTitle 
@@ -61,7 +61,7 @@ const WhoWeAre = () => (
                     <FaAws className='icon-hooli'/>
                 </div>
                 <div>
-                    <FaRedditAlien className='icon-hooli'/>
+                    <GiRobinHoodHat className='icon-hooli'/>
                 </div>
             </div>
             <div className='container mt-5'>

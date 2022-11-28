@@ -7,7 +7,7 @@ export const Button = styled.button`
     border: ${({theme})=> theme === "full" ? "none" : "1px solid #fff"};
 
     &:hover,:focus{
-        background-color: ${({theme})=> theme === "full" ? "#D0A144" : "transparent"};
-        color: #ffffff;
+        background-color: ${({theme})=> theme === "full" ? "#EAA111" : "#fff"};
+        color: ${({theme})=> theme === "full" ? "#fff" : "#000"};
     }
 `;

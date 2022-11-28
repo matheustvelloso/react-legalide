@@ -32,4 +32,7 @@ export default createGlobalStyle`
             width: 100%;
         }
     }
+    .container{
+        padding-right: 0;
+    }
 `
