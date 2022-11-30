@@ -13,7 +13,7 @@ const GetInTouch = () => (
                 text="Problems trying to resolve the conflict between 
                 the two major realms of Classical physics: Newtonian mechanics"
             />
-            <div className="row d-flex mt-5 mb-5 justify-content-center pb-5">
+            <div className="row d-flex mt-5 mb-5 container justify-content-center pb-5">
                 <CardGetInTouch
                     className="p-5 col-lg-3 my-4 bg-white"
                     icon={<BsTelephone className='icon-phone mb-4' />}

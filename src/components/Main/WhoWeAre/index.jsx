@@ -13,7 +13,7 @@ const WhoWeAre = () => (
                 text="Problems trying to resolve the conflict between the two major realms
                 of Classical physics: Newtonian mechanics"
             />
-            <div className="row row-cols-1 row-cols-lg-2 d-lg-flex justify-content-between">
+            <div className="row row-cols-1 row-cols-lg-2 d-lg-flex container justify-content-between">
                 <div className='col text-center'>
                     <div class="ratio ratio-16x9">
                         <iframe src="https://www.youtube.com/embed/ImEnWAVRLU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -64,12 +64,12 @@ const WhoWeAre = () => (
                     <GiRobinHoodHat className='icon-hooli'/>
                 </div>
             </div>
-            <div className='container mt-5'>
+            <div className='mt-5'>
                 <div className='d-flex flex-wrap justify-content-between bg-blue'>
-                    <div className='d-flex align-items-center justify-content-center p-4 mt-3'>
-                        <h3>Subscribe For Latest <br></br> Newsletter</h3>
+                    <div className='d-flex align-items-center justify-content-center p-4 my-3  '>
+                        <h3 className='h3-mb'>Subscribe For Latest Newsletter</h3>
                     </div>
-                    <div className='d-flex align-items-center p-4 mt-3'>
+                    <div className='d-flex align-items-center justify-content-center p-4 my-3'>
                         <input className="input-email p-4 w-md-100" type="email" placeholder='Your email' />
                         <button className='btn-subscribe'>Subscribe</button>
                     </div>

@@ -35,4 +35,7 @@ export default createGlobalStyle`
     .container{
         padding-right: 0;
     }
+    .h3-mb{
+        margin-bottom: 0;
+    }
 `
